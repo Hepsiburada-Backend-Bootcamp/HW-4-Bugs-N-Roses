@@ -1,0 +1,15 @@
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.deps.json
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\ref\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\Bugs_N_Roses.Domain.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\bin\Debug\net5.0\Bugs_N_Roses.Domain.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.AssemblyInfo.cs
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.csproj.CopyComplete
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\ref\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses\obj\Debug\net5.0\Bugs_N_Roses.Infrastructure.pdb

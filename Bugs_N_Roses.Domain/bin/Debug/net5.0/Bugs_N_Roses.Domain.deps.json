@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Bugs_N_Roses.Domain/1.0.0": {
+        "runtime": {
+          "Bugs_N_Roses.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Bugs_N_Roses.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
