@@ -2,6 +2,7 @@
 using Bugs_N_Roses.Domain.Repositories;
 using Dapper;
 using Microsoft.Extensions.Configuration;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -22,11 +23,32 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
         public void Add(Order order)
         {
             var sql = "INSERT INTO Orders (ProductId,UserId,Quantity,OrderDate) VALUES (@ProductId,@UserId,@Quantity,@OrderDate)";
+            var productQuery = $"SELECT * FROM Products WHERE Id = {order.ProductId}";
+            var userQuery = $"SELECT * FROM Users WHERE Id = {order.UserId}";
             using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
             {
+                
+                var productResult = connection.Query<Product>(productQuery).FirstOrDefault();
+                var userResult = connection.Query<User>(userQuery).FirstOrDefault();
+                MongoClient client = new MongoClient(_configuration.GetConnectionString("MongoDb"));
+                var mongoDb = client.GetDatabase("HW4Mongo");
+                var collection = mongoDb.GetCollection<OrderDetail>("OrderDetails");
+
+                OrderDetail orderDetail = new OrderDetail
+                {
+                    OrderId = order.Id,
+                    ProductId = productResult.Id,
+                    ProductName = productResult.ProductName,
+                    UserFirstName = userResult.FirstName,
+                    UserLastName = userResult.LastName,
+                    TotalPrice = productResult.Price * order.Quantity,
+                    OrderDate = order.OrderDate
+                };
+                collection.InsertOne(orderDetail);
                 connection.Open();
                 connection.Execute(sql, order);
             }
+
         }
 
         public void Delete(int id)

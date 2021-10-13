@@ -50,3 +50,15 @@ C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Domain.pdb
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.pdb
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\DnsClient.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
