@@ -1,21 +1,22 @@
-﻿using Bugs_N_Roses.Application.Services.OrderServices;
+﻿using Bugs_N_Roses.Application.Models.OrderModels;
+using Bugs_N_Roses.Application.Services.OrderServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bugs_N_Roses.API.Controllers
 {    
     [ApiController]
-    [Route("[controller]")]
-    public class OrderController : ControllerBase
+    [Route("api/[controller]")]
+    public class OrdersController : ControllerBase
     {
         private readonly IOrderService _orderService;
 
-        public OrderController(IOrderService orderService)
+        public OrdersController(IOrderService orderService)
         {
             _orderService = orderService;
         }
         
-        [HttpGet("")]
+        [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult GetOrders()
@@ -24,7 +25,7 @@ namespace Bugs_N_Roses.API.Controllers
             return Ok(orders);
         }
         
-        [HttpGet("{orderId:int}")]
+        [HttpGet("{orderId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -37,7 +38,28 @@ namespace Bugs_N_Roses.API.Controllers
             }
             return NotFound();
         }
-        
-        
+
+        [HttpPost]
+        public IActionResult Create([FromBody] OrderCreateDTO orderCreateDTO)
+        {
+            var result = _orderService.Add(orderCreateDTO);
+            return Ok(result);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] OrderUpdateDTO orderUpdateDTO)
+        {
+            var result = _orderService.Update(orderUpdateDTO, id);
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var result = _orderService.Delete(id);
+            return Ok(result);
+        }
+
+
     }
 }
