@@ -24,17 +24,8 @@ namespace Bugs_N_Roses.Application.Services.UserServices
         public bool Add(UserCreateDTO userCreateDTO)
         {
             var user = _mapper.Map<User>(userCreateDTO);
-
-            if (user == null)
-            {
-                throw new ApplicationException("User dont be added.");
-            }
-            else
-            {
-                _userRepository.Add(user);
-                return true;
-            }
-
+            _userRepository.Add(user);
+            return true;
 
         }
 
@@ -48,30 +39,14 @@ namespace Bugs_N_Roses.Application.Services.UserServices
         {
             var users = _userRepository.GetAll();
             var dtos = _mapper.Map<List<UserDTO>>(users);
-
-            if (dtos == null)
-            {
-                throw new ApplicationException("Users dont found.");
-            }
-            else
-            {
-                return dtos;
-            }
+            return dtos;
         }
 
         public UserDTO GetById(int id)
         {
             var user = _userRepository.Get(id);
             var mappedUser = _mapper.Map<UserDTO>(user);
-
-            if (mappedUser == null)
-            {
-                throw new ApplicationException("User dont found.");
-            }
-            else
-            {
-                return mappedUser;
-            }
+            return mappedUser;
         }
 
         public bool Update(UserUpdateDTO userUpdateDTO, int id)

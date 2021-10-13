@@ -24,18 +24,8 @@ namespace Bugs_N_Roses.Application.Services.ProductServices
         public bool Add(ProductCreateDTO productCreateDTO)
         {
             var product = _mapper.Map<Product>(productCreateDTO);
-
-            if (product == null)
-            {
-                throw new ApplicationException("Product dont be added.");
-            }
-            else
-            {
-                _productRepository.Add(product);
-                return true;
-            }
-            
-
+            _productRepository.Add(product);
+            return true;
         }
 
         public bool Delete(int id)
@@ -48,30 +38,14 @@ namespace Bugs_N_Roses.Application.Services.ProductServices
         {
             var products = _productRepository.GetAll();
             var dtos = _mapper.Map<List<ProductDTO>>(products);
-
-            if (dtos == null)
-            {
-                throw new ApplicationException("Products dont found.");
-            }
-            else
-            {
-                return dtos;
-            }
+            return dtos;
         }
 
         public ProductDTO GetById(int id)
         {
             var product = _productRepository.Get(id);
             var mappedProduct = _mapper.Map<ProductDTO>(product);
-
-            if (mappedProduct == null)
-            {
-                throw new ApplicationException("Product dont found.");
-            }
-            else
-            {
-                return mappedProduct;
-            }
+            return mappedProduct;
         }
 
         public bool Update(ProductUpdateDTO productUpdateDTO, int id)

@@ -24,18 +24,8 @@ namespace Bugs_N_Roses.Application.Services.OrderServices
         public bool Add(OrderCreateDTO orderCreateDTO)
         {
             var order = _mapper.Map<Order>(orderCreateDTO);
-
-            if (order == null)
-            {
-                throw new ApplicationException("Order dont be added.");
-            }
-            else
-            {
-                _orderRepository.Add(order);
-                return true;
-            }
-
-
+            _orderRepository.Add(order);
+            return true;
         }
 
         public bool Delete(int id)
@@ -48,30 +38,14 @@ namespace Bugs_N_Roses.Application.Services.OrderServices
         {
             var orders = _orderRepository.GetAll();
             var dtos = _mapper.Map<List<OrderDTO>>(orders);
-
-            if (dtos == null)
-            {
-                throw new ApplicationException("Orders dont found.");
-            }
-            else
-            {
-                return dtos;
-            }
+            return dtos;
         }
 
         public OrderDTO GetById(int id)
         {
             var order = _orderRepository.Get(id);
             var mappedOrder = _mapper.Map<OrderDTO>(order);
-
-            if (mappedOrder == null)
-            {
-                throw new ApplicationException("Order dont found.");
-            }
-            else
-            {
-                return mappedOrder;
-            }
+             return mappedOrder;
         }
 
         public bool Update(OrderUpdateDTO orderUpdateDTO, int id)
