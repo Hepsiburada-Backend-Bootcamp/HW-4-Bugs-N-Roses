@@ -21,7 +21,7 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
         }
         public void Add(User user)
         {
-            var sql = "INSERT INTO User (FirstName,LastName,Adress,Email,PhoneNumber,IsActive) VALUES (@FirstName,@LastName,@Adress,@Email,@PhoneNumber,@IsActive)";
+            var sql = "INSERT INTO Users (FirstName,LastName,Adress,Email,PhoneNumber,IsActive) VALUES (@FirstName,@LastName,@Adress,@Email,@PhoneNumber,@IsActive)";
             using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
             {
                 connection.Open();

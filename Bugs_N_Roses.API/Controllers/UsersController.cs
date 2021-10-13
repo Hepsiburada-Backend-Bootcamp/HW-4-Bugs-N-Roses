@@ -7,12 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace Bugs_N_Roses.API.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
-    public class UserController : ControllerBase
+    [Route("api/[controller]")]
+    public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UsersController(IUserService userService)
         {
             _userService = userService;
         }
@@ -26,11 +26,11 @@ namespace Bugs_N_Roses.API.Controllers
             return Ok(users);
         }
         
-        [HttpGet("{userId:int}")]
+        [HttpGet("{userId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetUsers([FromBody]int userId)
+        public IActionResult GetUser([FromQuery]int userId)
         {
             var user=_userService.GetById(userId);
             if (user != null)
@@ -40,7 +40,7 @@ namespace Bugs_N_Roses.API.Controllers
             return NotFound();
         }
         
-        [HttpPost("")]
+        [HttpPost]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -54,11 +54,11 @@ namespace Bugs_N_Roses.API.Controllers
             return BadRequest();
         }
         
-        [HttpDelete("{userId:int}")]
+        [HttpDelete("{userId}")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult DeleteUser([FromBody]int userId)
+        public IActionResult DeleteUser(int userId)
         {
             var user=_userService.Delete(userId);
             if (user)
