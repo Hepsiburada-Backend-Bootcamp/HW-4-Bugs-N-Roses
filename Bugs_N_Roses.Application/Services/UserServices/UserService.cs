@@ -48,7 +48,8 @@ namespace Bugs_N_Roses.Application.Services.UserServices
         {
             var users = _userRepository.GetAll();
             var dtos = _mapper.Map<List<UserDTO>>(users);
-
+            return dtos;
+            /*
             if (dtos == null)
             {
                 throw new ApplicationException("Users dont found.");
@@ -57,6 +58,7 @@ namespace Bugs_N_Roses.Application.Services.UserServices
             {
                 return dtos;
             }
+            */
         }
 
         public UserDTO GetById(int id)
