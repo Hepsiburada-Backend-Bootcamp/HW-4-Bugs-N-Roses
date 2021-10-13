@@ -1,3 +1,6 @@
+using AutoMapper;
+using Bugs_N_Roses.Application.AutoMapper;
+using Bugs_N_Roses.Application.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,6 +31,16 @@ namespace Bugs_N_Roses.API
         {
 
             services.AddControllers();
+
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new AutoMapperConfiguration());
+            });
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddApplicationModule(Configuration);
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Bugs_N_Roses.API", Version = "v1" });

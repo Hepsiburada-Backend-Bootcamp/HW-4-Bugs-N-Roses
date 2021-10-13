@@ -35,3 +35,17 @@ C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\obj\Debug\net5.0\Bugs
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\obj\Debug\net5.0\ref\Bugs_N_Roses.API.dll
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\obj\Debug\net5.0\Bugs_N_Roses.API.pdb
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\obj\Debug\net5.0\Bugs_N_Roses.API.genruntimeconfig.cache
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Dapper.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Application.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Domain.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Application.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Domain.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.API\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.pdb

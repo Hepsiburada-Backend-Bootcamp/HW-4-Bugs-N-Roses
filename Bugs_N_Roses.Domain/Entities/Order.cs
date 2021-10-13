@@ -12,6 +12,6 @@ namespace Bugs_N_Roses.Domain.Entities
         public int ProductId { get; set; }
         public int UserId { get; set; }
         public int Quantity { get; set; }
-        public DateTime OrderDate { get; set; }
+        public DateTime OrderDate { get; } = DateTime.Now;
     }
 }

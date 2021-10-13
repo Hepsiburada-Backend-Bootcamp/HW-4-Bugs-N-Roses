@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace Bugs_N_Roses.Domain.Repositories
 {
-    public interface IProductRepository : IRepository<Product>
+    public interface IProductRepository
     {
-
+        void Add(Product product);
+        void Update(Product product);
+        void Delete(int id);
+        Product Get(int id);
+        IList<Product> GetAll();
     }
 }

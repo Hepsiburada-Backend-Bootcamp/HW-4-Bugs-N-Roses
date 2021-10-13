@@ -10,3 +10,8 @@ C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\obj\Debug\net
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\obj\Debug\net5.0\Bugs_N_Roses.Application.dll
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\obj\Debug\net5.0\ref\Bugs_N_Roses.Application.dll
 C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\obj\Debug\net5.0\Bugs_N_Roses.Application.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\bin\Debug\net5.0\Bugs_N_Roses.Domain.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\bin\Debug\net5.0\Bugs_N_Roses.Domain.pdb
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\obj\Debug\net5.0\Bugs_N_Roses.Application.csproj.CopyComplete
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.dll
+C:\Users\Mehmet\source\repos\Bugs_N_Roses\Bugs_N_Roses.Application\bin\Debug\net5.0\Bugs_N_Roses.Infrastructure.pdb
