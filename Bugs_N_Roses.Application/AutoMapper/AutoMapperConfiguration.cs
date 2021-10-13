@@ -16,8 +16,16 @@ namespace Bugs_N_Roses.Application.AutoMapper
         public AutoMapperConfiguration()
         {
             CreateMap<Product, ProductDTO>().ReverseMap();
+            CreateMap<Product, ProductCreateDTO>().ReverseMap();
+            CreateMap<Product, ProductUpdateDTO>().ReverseMap();
+
             CreateMap<User, UserDTO>().ReverseMap();
+            CreateMap<User, UserCreateDTO>().ReverseMap();
+            CreateMap<User, UserUpdateDTO>().ReverseMap();
+
             CreateMap<Order, OrderDTO>().ReverseMap();
+            CreateMap<Order, OrderCreateDTO>().ReverseMap();
+            CreateMap<Order, OrderUpdateDTO>().ReverseMap();
         }
     }
 }

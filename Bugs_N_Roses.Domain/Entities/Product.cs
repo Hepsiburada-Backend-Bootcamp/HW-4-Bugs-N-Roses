@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+#nullable disable
+
 namespace Bugs_N_Roses.Domain.Entities
 {
     public class Product

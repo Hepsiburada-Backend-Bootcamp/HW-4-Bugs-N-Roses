@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Bugs_N_Roses.Application.Models.ProductModels;
 using Bugs_N_Roses.Application.Services.ProductServices;
+using Bugs_N_Roses.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -30,6 +32,36 @@ namespace Bugs_N_Roses.API.Controllers
             return Ok(result);
         }
 
+        [HttpGet]
+        public IActionResult GetAll()
+        {
+            var result = _productService.GetAll();
+
+            return Ok(result);
+        }
+
+
+        [HttpPost]
+        public IActionResult Create([FromBody] ProductCreateDTO productCreateDTO)
+        {
+            
+            var result = _productService.Add(productCreateDTO);
+            return Ok(result);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Update(int id, [FromBody] ProductUpdateDTO productUpdateDTO)
+        {
+            var result = _productService.Update(productUpdateDTO, id);
+            return Ok(result);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var result = _productService.Delete(id);
+            return Ok(result);
+        }
 
     }
 }

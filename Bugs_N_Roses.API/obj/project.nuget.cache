@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1jbqepHRf6drHS/wyBcBINWNMNZ9T7UN5s0v+NAZCfO7gfAcPhp2DgekkpDIIlO/MnWvk7QsHLWFkxtxgLSBCA==",
+  "dgSpecHash": "6ebXG5v0m4ae+pdlY4ZFF+0HNPJLfL/DfIHO24ZAbMt+jHEtgJNbs/nJMFp08uokp2uGCSk8HaOkVUdOnV13ug==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mehmet\\source\\repos\\Bugs_N_Roses\\Bugs_N_Roses.API\\Bugs_N_Roses.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mehmet\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Mehmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.1\\microsoft.aspnetcore.authentication.jwtbearer.5.0.1.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.1\\microsoft.aspnetcore.authentication.openidconnect.5.0.1.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",

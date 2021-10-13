@@ -32,12 +32,14 @@ namespace Bugs_N_Roses.API
 
             services.AddControllers();
 
-            var mappingConfig = new MapperConfiguration(mc =>
-            {
-                mc.AddProfile(new AutoMapperConfiguration());
-            });
-            IMapper mapper = mappingConfig.CreateMapper();
-            services.AddSingleton(mapper);
+            services.AddAutoMapper(x => x.AddProfile(typeof(AutoMapperConfiguration)));
+
+            //var mappingConfig = new MapperConfiguration(mc =>
+            //{
+            //    mc.AddProfile(new AutoMapperConfiguration());
+            //});
+            //IMapper mapper = mappingConfig.CreateMapper();
+            //services.AddSingleton(mapper);
 
             services.AddApplicationModule(Configuration);
 
