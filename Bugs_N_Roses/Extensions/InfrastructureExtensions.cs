@@ -14,6 +14,7 @@ namespace Bugs_N_Roses.Infrastructure.Extensions
     {
         public static IServiceCollection AddInfrastructureModule(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddScoped<IOrderDetailRepository,OrderDetailRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IUserRepository, UserRepository>();

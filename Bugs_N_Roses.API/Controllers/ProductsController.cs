@@ -25,7 +25,7 @@ namespace Bugs_N_Roses.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get([FromQuery] int id)
+        public IActionResult Get(int id)
         {
             var result = _productService.GetById(id);
 

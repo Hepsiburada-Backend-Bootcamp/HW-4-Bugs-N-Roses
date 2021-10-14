@@ -1,4 +1,5 @@
-﻿using Bugs_N_Roses.Application.Services.OrderServices;
+﻿using Bugs_N_Roses.Application.Services.OrderDetailServices;
+using Bugs_N_Roses.Application.Services.OrderServices;
 using Bugs_N_Roses.Application.Services.ProductServices;
 using Bugs_N_Roses.Application.Services.UserServices;
 using Bugs_N_Roses.Infrastructure.Extensions;
@@ -18,6 +19,7 @@ namespace Bugs_N_Roses.Application.Extensions
         {
             services.AddInfrastructureModule(configuration);
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IOrderDetailService, OrderDetailService>();
             services.AddScoped<IOrderService, OrderService>();
             services.AddScoped<IUserService, UserService>();
             return services;

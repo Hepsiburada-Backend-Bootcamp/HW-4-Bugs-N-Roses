@@ -30,7 +30,7 @@ namespace Bugs_N_Roses.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetUser([FromQuery]int userId)
+        public IActionResult GetUser(int userId)
         {
             var user=_userService.GetById(userId);
             if (user != null)

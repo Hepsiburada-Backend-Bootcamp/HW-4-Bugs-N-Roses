@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Bugs_N_Roses.Application.Models.OrderDetailModels;
 using Bugs_N_Roses.Application.Models.OrderModels;
 using Bugs_N_Roses.Application.Models.ProductModels;
 using Bugs_N_Roses.Application.Models.UserModels;
@@ -26,6 +27,8 @@ namespace Bugs_N_Roses.Application.AutoMapper
             CreateMap<Order, OrderDTO>().ReverseMap();
             CreateMap<Order, OrderCreateDTO>().ReverseMap();
             CreateMap<Order, OrderUpdateDTO>().ReverseMap();
+
+            CreateMap<OrderDetail, OrderDetailDTO>().ReverseMap();
         }
     }
 }

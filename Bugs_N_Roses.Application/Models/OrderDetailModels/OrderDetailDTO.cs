@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bugs_N_Roses.Domain.Entities
+namespace Bugs_N_Roses.Application.Models.OrderDetailModels
 {
-    public class OrderDetail
+    public class OrderDetailDTO
     {
         public ObjectId _id { get; set; }
         public int OrderId { get; set; }

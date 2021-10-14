@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sHg2rYi4qwNy7rF1M2IB44htDmalGnZsLbOlI8QQsnuKKXvq1HrxZWUgA6IUuDVlRK5RrAy4Wd5NeBUwUlLtFA==",
+  "dgSpecHash": "CWGeM+gr8MMyJ4kwi+my4VcG5HamFxwyb5FeP2W9Q/EZDiyfrRonJdLUsOV1smhKWsq+oX0PaHDel9C8u81Ysw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mehmet\\source\\repos\\Bugs_N_Roses\\Bugs_N_Roses.API\\Bugs_N_Roses.API.csproj",
+  "projectFilePath": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.API\\Bugs_N_Roses.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mehmet\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

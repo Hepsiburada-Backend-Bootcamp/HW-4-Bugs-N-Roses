@@ -23,11 +23,18 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
         public void Add(Order order)
         {
             var sql = "INSERT INTO Orders (ProductId,UserId,Quantity,OrderDate) VALUES (@ProductId,@UserId,@Quantity,@OrderDate)";
+            var orderLastQuery = $"SELECT * FROM Orders WHERE UserId = {order.UserId}";
             var productQuery = $"SELECT * FROM Products WHERE Id = {order.ProductId}";
             var userQuery = $"SELECT * FROM Users WHERE Id = {order.UserId}";
             using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
             {
-                
+                connection.Open();
+                connection.Execute(sql, order);
+                var orderResult = connection.Query<Order>(orderLastQuery).LastOrDefault();
+                if (orderResult == null)
+                {
+                    return;
+                }
                 var productResult = connection.Query<Product>(productQuery).FirstOrDefault();
                 var userResult = connection.Query<User>(userQuery).FirstOrDefault();
                 MongoClient client = new MongoClient(_configuration.GetConnectionString("MongoDb"));
@@ -36,7 +43,8 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
 
                 OrderDetail orderDetail = new OrderDetail
                 {
-                    OrderId = order.Id,
+                    OrderId = orderResult.Id,
+                    UserId = userResult.Id,
                     ProductId = productResult.Id,
                     ProductName = productResult.ProductName,
                     UserFirstName = userResult.FirstName,
@@ -45,8 +53,7 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
                     OrderDate = order.OrderDate
                 };
                 collection.InsertOne(orderDetail);
-                connection.Open();
-                connection.Execute(sql, order);
+                
             }
 
         }

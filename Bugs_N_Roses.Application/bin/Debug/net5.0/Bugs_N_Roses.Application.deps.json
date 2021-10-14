@@ -340,6 +340,7 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "5.0.1",
           "Microsoft.Extensions.Configuration": "5.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0",
+          "MongoDB.Bson": "2.13.2",
           "System.Data.SqlClient": "4.8.3"
         },
         "runtime": {
