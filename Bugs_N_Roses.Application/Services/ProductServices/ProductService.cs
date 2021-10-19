@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Bugs_N_Roses.Application.Models.ProductModels;
+using Bugs_N_Roses.Domain.ApplicationFilters;
 using Bugs_N_Roses.Domain.Entities;
 using Bugs_N_Roses.Domain.Repositories;
 using System;
@@ -37,6 +38,13 @@ namespace Bugs_N_Roses.Application.Services.ProductServices
         public List<ProductDTO> GetAll()
         {
             var products = _productRepository.GetAll();
+            var dtos = _mapper.Map<List<ProductDTO>>(products);
+            return dtos;
+        }
+
+        public List<ProductDTO> GetByFilter(ProductParameters parameters)
+        {
+            var products = _productRepository.GetByFilter(parameters);
             var dtos = _mapper.Map<List<ProductDTO>>(products);
             return dtos;
         }

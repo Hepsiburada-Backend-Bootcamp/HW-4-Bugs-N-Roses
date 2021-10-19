@@ -7052,11 +7052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
+      "projectUniqueName": "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
       "projectName": "Bugs_N_Roses.Domain_Test",
-      "projectPath": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
+      "projectPath": "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
       "packagesPath": "C:\\Users\\Mehmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\obj\\",
+      "outputPath": "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mehmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7073,8 +7073,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain\\Bugs_N_Roses.Domain.csproj": {
-              "projectPath": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain\\Bugs_N_Roses.Domain.csproj"
+            "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain\\Bugs_N_Roses.Domain.csproj": {
+              "projectPath": "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain\\Bugs_N_Roses.Domain.csproj"
             }
           }
         }

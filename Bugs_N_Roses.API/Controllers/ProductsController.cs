@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Bugs_N_Roses.Application.Models.ProductModels;
 using Bugs_N_Roses.Application.Services.ProductServices;
+using Bugs_N_Roses.Domain.ApplicationFilters;
 using Bugs_N_Roses.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -60,6 +61,14 @@ namespace Bugs_N_Roses.API.Controllers
         public IActionResult Delete(int id)
         {
             var result = _productService.Delete(id);
+            return Ok(result);
+        }
+
+        [HttpGet("getbyfilter")]
+        public IActionResult GetByFilter([FromQuery] ProductParameters parameters)
+        {
+            var result = _productService.GetByFilter(parameters);
+
             return Ok(result);
         }
 

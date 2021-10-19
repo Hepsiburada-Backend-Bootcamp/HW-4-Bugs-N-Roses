@@ -1,4 +1,5 @@
 ﻿using Bugs_N_Roses.Application.Models.ProductModels;
+using Bugs_N_Roses.Domain.ApplicationFilters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Bugs_N_Roses.Application.Services.ProductServices
         bool Add(ProductCreateDTO productCreateDTO);
         bool Update(ProductUpdateDTO productUpdateDTO, int id);
         bool Delete(int id);
+        List<ProductDTO> GetByFilter(ProductParameters parameters);
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L8WvJZz8dbkrr2v01OnGKdNXYZy3bJVbJxL44Poup3T0l08+XUgYOMI7cR0komWpcOuy3M+xHmMGRErslkzwNw==",
+  "dgSpecHash": "RwR23ohQITuWVKvMVgdIoy7EXVdFF5hsreqKHuKezjQLAtyDwYBoIN/hEyNsUyTwziKG2uiswpejFKNxljJhRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mehmet\\Source\\Repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
+  "projectFilePath": "C:\\Users\\Mehmet\\source\\repos\\HW-4-Bugs-N-Roses\\Bugs_N_Roses.Domain_Test\\Bugs_N_Roses.Domain_Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mehmet\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Mehmet\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",

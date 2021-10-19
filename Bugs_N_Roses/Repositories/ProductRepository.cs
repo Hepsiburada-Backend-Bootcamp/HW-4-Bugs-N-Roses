@@ -1,4 +1,5 @@
-﻿using Bugs_N_Roses.Domain.Entities;
+﻿using Bugs_N_Roses.Domain.ApplicationFilters;
+using Bugs_N_Roses.Domain.Entities;
 using Bugs_N_Roses.Domain.Repositories;
 using Dapper;
 using Microsoft.Extensions.Configuration;
@@ -71,6 +72,27 @@ namespace Bugs_N_Roses.Infrastructure.Repositories
         public IList<Product> GetAll()
         {
             var sql = "SELECT * FROM Products";
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
+            {
+                connection.Open();
+                var result = connection.Query<Product>(sql);
+
+                if (result == null)
+                {
+                    throw new ApplicationException("Products not found");
+                }
+                else
+                {
+                    return result.ToList();
+                }
+            }
+        }
+
+        public IList<Product> GetByFilter(ProductParameters parameters)
+        {
+            //SELECT* FROM Products WHERE Price BETWEEN 5 AND 30 ORDER BY Price OFFSET 0 ROWS FETCH NEXT 25 ROWS ONLY
+
+            var sql = $"SELECT * FROM Products WHERE Price BETWEEN {parameters.MinPrice} AND {parameters.MaxPrice} ORDER BY Price OFFSET {parameters.PageSize * (parameters.PageNumber - 1)} ROWS FETCH NEXT {parameters.PageSize} ROWS ONLY";
             using (var connection = new SqlConnection(_configuration.GetConnectionString("Default")))
             {
                 connection.Open();

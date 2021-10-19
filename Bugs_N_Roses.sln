@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugs_N_Roses.Infrastructure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugs_N_Roses.API", "Bugs_N_Roses.API\Bugs_N_Roses.API.csproj", "{8329D6E4-E293-4638-9184-CBCDA9907F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bugs_N_Roses.Domain_Test", "Bugs_N_Roses.Domain_Test\Bugs_N_Roses.Domain_Test.csproj", "{C9406678-D667-4464-B30B-E2715A29674D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugs_N_Roses.Domain_Test", "Bugs_N_Roses.Domain_Test\Bugs_N_Roses.Domain_Test.csproj", "{C9406678-D667-4464-B30B-E2715A29674D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

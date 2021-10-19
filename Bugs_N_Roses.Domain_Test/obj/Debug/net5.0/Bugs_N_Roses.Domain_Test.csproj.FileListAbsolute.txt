@@ -234,3 +234,4 @@ C:\Users\Mehmet\Source\Repos\HW-4-Bugs-N-Roses\Bugs_N_Roses.Domain_Test\obj\Debu
 C:\Users\Mehmet\Source\Repos\HW-4-Bugs-N-Roses\Bugs_N_Roses.Domain_Test\obj\Debug\net5.0\ref\Bugs_N_Roses.Domain_Test.dll
 C:\Users\Mehmet\Source\Repos\HW-4-Bugs-N-Roses\Bugs_N_Roses.Domain_Test\obj\Debug\net5.0\Bugs_N_Roses.Domain_Test.pdb
 C:\Users\Mehmet\Source\Repos\HW-4-Bugs-N-Roses\Bugs_N_Roses.Domain_Test\obj\Debug\net5.0\Bugs_N_Roses.Domain_Test.genruntimeconfig.cache
+C:\Users\Mehmet\source\repos\HW-4-Bugs-N-Roses\Bugs_N_Roses.Domain_Test\bin\Debug\net5.0\MongoDB.Bson.dll

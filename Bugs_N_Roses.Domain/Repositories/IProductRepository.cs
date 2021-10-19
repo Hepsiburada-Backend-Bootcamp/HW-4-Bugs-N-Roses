@@ -1,4 +1,5 @@
-﻿using Bugs_N_Roses.Domain.Entities;
+﻿using Bugs_N_Roses.Domain.ApplicationFilters;
+using Bugs_N_Roses.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +15,6 @@ namespace Bugs_N_Roses.Domain.Repositories
         void Delete(int id);
         Product Get(int id);
         IList<Product> GetAll();
+        IList<Product> GetByFilter(ProductParameters parameters);
     }
 }
